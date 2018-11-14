@@ -52,3 +52,13 @@ build-rpm: deps
 	rpmbuild -vv -bb --target="${ARCH}" --clean --define "_topdir $$(pwd)/${BUILDDIR}" ${BUILDDIR}/SPECS/${NAME}.spec
 	mkdir release || true
 	mv ${BUILDDIR}/RPMS/${ARCH}/*.rpm release
+
+change-version:
+	bin/change-version.sh $(version)
+
+package:
+	bin/package.sh
+
+deploy:
+	bin/deploy.sh
+
