@@ -8,7 +8,7 @@ ARCH:=$(shell uname -p)
 all: build
 
 clean:
-	rm -rf bin pkg ${NAME} ${BUILDDIR} release
+	rm -rf bin/etcdtool* pkg ${NAME} ${BUILDDIR} release
 
 update:
 	gb vendor update --all
