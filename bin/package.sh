@@ -36,5 +36,5 @@ cd -
 
 cd $GOPATH/src/github.com/mickep76/etcdtool
 
-$GOROOT/bin/go build -o $CURRENT_PATH/bin/etcdtool-stratio-$VERSION .
+$GOROOT/bin/go build -o $CURRENT_PATH/bin/etcdtool-$VERSION .
 
