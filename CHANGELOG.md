@@ -2,7 +2,7 @@
 
 ## 3.6.0 (upcoming)
 
-* Pending changelog
+* Fix build 
 
 ## 3.5.0 (November 19, 2018)
 

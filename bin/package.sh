@@ -14,7 +14,6 @@ export GOPATH=$CURRENT_PATH
 
 wget -q http://tools.stratio.com/go/go1.9.7.linux-amd64.tar.gz
 
-
 tar -xvzf go1.9.7.linux-amd64.tar.gz 
 
 $GOROOT/bin/go get github.com/bgentry/speakeasy
@@ -32,7 +31,8 @@ $GOROOT/bin/go get github.com/ugorji/go/codec
 cd $GOPATH/src/github.com/coreos/etcd
 git checkout remotes/origin/release-3.3
 cd -
-
+# fix build, workaraoud see https://github.com/etcd-io/etcd/pull/8721
+rm $GOPATH/src/github.com/coreos/etcd/client/keys.generated.go
 
 cd $GOPATH/src/github.com/mickep76/etcdtool
 
