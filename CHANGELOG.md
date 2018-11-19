@@ -1,5 +1,5 @@
 # Changelog
 
-## 3.0.0 (upcoming)
+## 3.5.0 (upcoming)
 
 * Adapt etcdtool to EOS requierements
