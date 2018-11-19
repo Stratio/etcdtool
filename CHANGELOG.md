@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.5.1 (upcoming)
+## 3.5.1 (November 19, 2018)
 
 * Fix go build
 
